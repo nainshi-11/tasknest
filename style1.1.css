@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rock Salt", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("pexels-sohi-807598.jpg") no-repeat center center/cover;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-app {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.todo-app h1 {
+  text-align: center;
+}
+
+
+
+.input-area {
+  display: flex;
+}
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#progress-numbers {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #3cb371;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#progressbar {
+  width: 100%;
+  height: 10px;
+  background: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#progress {
+  height: 100%;
+  width: 0%;
+  background: #3cb371;
+  transition: width 0.3s ease;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.input-area button {
+  margin-left: 10px;
+  background: #3cb371;
+  border: none;
+  color: rgb(37, 180, 164);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.todos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#task-list {
+  list-style: none;
+  width: 100%;
+}
+
+#task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#task-list li.completed span {
+  text-decoration: line-through;
+  color: #0b502c;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.task-buttons button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(117, 162, 54);
+}
+
+.empty-image {
+  width: 100px;
+  opacity: 0.5;
+  display: none;
+  margin-top: 20px;
+}

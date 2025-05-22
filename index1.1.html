@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="style1.1.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <h1><i class="fa-solid fa-clipboard-list"></i> TO DO APP</h1>
+
+      <!-- Progress + Stats -->
+      <div class="progress-container">
+        <div class="details">
+          <h3>Keep it up!!</h3>
+          <div id="progressbar">
+            <div id="progress"></div>
+            <p id="progress-numbers">0 / 0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <form class="input-area" id="task-form">
+        <input type="text" id="task-input" placeholder="Add a new task" required />
+        <button type="submit" id="add-task-btn"><i class="fa-solid fa-plus"></i></button>
+      </form>
+
+      <!-- Task list -->
+      <div class="todos-container">
+        <ul id="task-list"></ul>
+        <img class="empty-image" src="sakura.png" alt="No tasks" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script1.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>
